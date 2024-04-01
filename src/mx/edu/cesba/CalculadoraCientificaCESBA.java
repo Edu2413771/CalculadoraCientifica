@@ -560,17 +560,17 @@ public class CalculadoraCientificaCESBA extends javax.swing.JFrame {
 
     private void btc_sinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btc_sinActionPerformed
         num1 = Float.parseFloat(txt_output.getText());
-        txt_output.setText(String.valueOf(Math.sin(num1))); 
+        txt_output.setText(Float.toString((float) Math.sin(Math.toRadians(num1))));
     }//GEN-LAST:event_btc_sinActionPerformed
 
     private void btc_cosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btc_cosActionPerformed
         num1 = Float.parseFloat(txt_output.getText());
-        txt_output.setText(String.valueOf(Math.cos(num1)));
+        txt_output.setText(Float.toString((float) Math.cos(Math.toRadians(num1))));
     }//GEN-LAST:event_btc_cosActionPerformed
 
     private void btc_tanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btc_tanActionPerformed
         num1 = Float.parseFloat(txt_output.getText());
-        txt_output.setText(String.valueOf(Math.tan(num1)));
+        txt_output.setText(Float.toString((float) Math.tan(Math.toRadians(num1))));
     }//GEN-LAST:event_btc_tanActionPerformed
 
     private void btc_logActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btc_logActionPerformed
